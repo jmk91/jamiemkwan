@@ -896,5 +896,8 @@ span.detail {
   #mobile-only { display:block; }
 }
 
+img.featureimg-mobile {
+  padding-bottom: 10px;
+}
 
 

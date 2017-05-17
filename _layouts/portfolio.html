@@ -125,7 +125,13 @@
 <!-- START section -->
 <div>
     <div class="container">
-                    
+        
+        <div class="row featureimg-mobile" id="mobile-only">
+            <div class="col-sm-12 col-xs-12">
+                <img src="../assets/projects/{{ page.featureimg }}/1.jpg" class="img-responsive">
+            </div>
+        </div>
+                            
         {% for text in page.challenge %}      
         <div class="row">
             <div class="col-md-8">
@@ -134,12 +140,6 @@
                 <img src="../images/branding-border.png" alt="" class="heading-border">
             </div>
         </div>{% endfor %}
-
-        <div class="row" id="mobile-only">
-            <div class="col-sm-12 col-xs-12">
-                <img src="../assets/projects/{{ page.featureimg }}/1.jpg" class="img-responsive">
-            </div>
-        </div>
 
         <div class="row">
 
