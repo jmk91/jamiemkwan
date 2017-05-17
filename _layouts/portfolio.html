@@ -102,7 +102,7 @@
                     <div class="col-md-7 col-xs-12">
                         <h1>{{ page.title }}</h1>
                         <img src="../images/branding-border.png" alt="" class="heading-border">
-                        <p>{{ page.subheading }}</p>
+                        <p>{{ page.summary }}</p>
                     </div>
                 </div>
             </div>
@@ -129,40 +129,21 @@
         <div class="container">
             <div class="row"><br><hr><br>
                 <div class="work-grids-area hover-one masonry" id="atom-works-grid">
-                        <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item architectural interactive">
-                           <a href="../assets/projects/ad-astra/5.jpg" data-lightbox="ad-astra">
-                               <img src="../assets/projects/ad-astra/5.jpg" alt="Ad Astra" class="img-responsive"/>
-                           </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item architectural interactive">
-                           <a href="../assets/projects/ad-astra/3.jpg" data-lightbox="ad-astra">
-                               <img src="../assets/projects/ad-astra/3.jpg" alt="Ad Astra" class="img-responsive"/>
-                           </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item architectural interactive">
-                           <a href="../assets/projects/ad-astra/6.jpg" data-lightbox="ad-astra">
-                               <img src="../assets/projects/ad-astra/6.jpg" alt="Ad Astra" class="img-responsive"/>
-                           </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item architectural interactive">
-                           <a href="../assets/projects/ad-astra/1.jpg" data-lightbox="ad-astra">
-                               <img src="../assets/projects/ad-astra/1.jpg" alt="Ad Astra" class="img-responsive"/>
-                           </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item architectural interactive">
-                           <a href="../assets/projects/ad-astra/2.jpg" data-lightbox="ad-astra">
-                               <img src="../assets/projects/ad-astra/2.jpg" alt="Ad Astra" class="img-responsive"/>
-                           </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item architectural interactive">
-                           <a href="../assets/projects/ad-astra/4.jpg" data-lightbox="ad-astra">
-                               <img src="../assets/projects/ad-astra/4.jpg" alt="Ad Astra" class="img-responsive"/>
-                           </a>
-                        </div>
+
+                    {% for image in page.images %}
+                    <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item">
+                        <a href="{{ image.image_path }}" data-lightbox="{{ page.featureimg }}">
+                            <img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive"/>
+                        </a>
+                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
         </div>
         <!--/ END image gallery -->
+
+
         <!-- START footer section -->
         <footer class="atom-footer-area small-section">
             <div class="container">
