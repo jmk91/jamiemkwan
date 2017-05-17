@@ -552,7 +552,7 @@ hr {
 }
 
 .parallax-image {
-  height: 20%;
+  height: 100vh;
 }
 
 .full-width {
@@ -886,6 +886,14 @@ span.detail {
   color: rgba(0,0,0, 0.6); 
   background-color: rgba(255,225,0, 0.5);
   text-transform: uppercase;
+}
+
+#txt-01 { display:block; }
+#txt-02 { display:none; }
+
+@media (max-width: 970px) {
+  #txt-01 { display:none; }
+  #txt-02 { display:block; }
 }
 
 
