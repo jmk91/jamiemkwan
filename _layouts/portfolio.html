@@ -141,10 +141,10 @@
 
             <div class="col-md-4 col-sm-8">
                 <ul class="project-info list-unstyled">
-                  <li>Category: <span>{{ page.category }}</span></li>
-                  <li>Client: <span>{{ page.client }}</span></li>
-                  <li>Date: <span>{{ page.date }}</span></li>
-                  <li>Team: <span>{{ page.team }}</span></li>
+                  {% for text in page.category %}<li>Category: <span>{{ page.category }}</span></li>{% endfor %}
+                  {% for text in page.client %}<li>Client: <span>{{ page.client }}</span></li>{% endfor %}
+                  {% for text in page.date %}<li>Date: <span>{{ page.date }}</span></li>{% endfor %}
+                  {% for text in page.team %}<li>Team: <span>{{ page.team }}</span></li>{% endfor %}
                 </ul>
             </div>
         </div>
