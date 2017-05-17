@@ -11,7 +11,7 @@ images:
     title: China Sketchbook
   - image_path: ../assets/projects/china-study/5.jpg
     title: China Sketchbook
-  - image_path: ../assets/projects/china-study/1.jpg
+  - image_path: ../assets/projects/china-study/7.jpg
     title: China Sketchbook
   - image_path: ../assets/projects/china-study/3.jpg
     title: China Sketchbook
@@ -35,25 +35,3 @@ team:
 	<li>Designing between, within, and around natural features;</li>
 	<li>Creating landmark destinations and public vistas.</li>
 </ol>
-
-<div class="row">
-	<hr>
-	{% for image in page.images %}
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="{{ image.image_path }}" data-lightbox="china-study">
-		<img src="{{ image.image_path }}" alt="{{ image.title }}" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	{% endfor %}
-</div>
-
-<hr>
-
-<div class="text-muted">
-	<p><span class="detail">Details</span></p>
-	<ul>
-		<li>Cities Visited: Beijing, Datong, Xi'an, Pingyao, YiChang, Suzhou, and Shanghai </li>
-		<li>Ryerson University Architecture Studio Abroad (Summer 2012)	</li>
-	</ul>
-</div>
-
