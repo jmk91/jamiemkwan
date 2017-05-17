@@ -1,0 +1,104 @@
+---
+layout: portfolio
+title: Form Follows Narrative
+heading: "Thesis: Museums in a Digital Age"
+info: "Tangible Narratives Research Project"
+extra: 
+featureimage_url: "../assets/images/projects/thesis/3.jpg"
+
+challenge: "Design an exhibition interactive that tells the stories embedded within miniature boxwood prayer beads."
+
+solution: "The proposed interactive exhibit uses both physical space and digital media to allow for visitors to engage with the tangible narratives through all senses, intertwined to encourage a sense of discovery, exploration, and personalized learning. The interactive prototype was built using DIY methods, to allow museums to implement with minimal resources."
+
+images:
+  - image_path: ../assets/images/projects/thesis/d3.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/1.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/3.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/4.jpg
+    title: Thesis
+
+process:
+  - image_path: ../assets/images/projects/thesis/d1.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/d2.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/d7.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/d6.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/d5.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/d8.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/d9.jpg
+    title: Thesis
+  - image_path: ../assets/images/projects/thesis/s1.jpg
+    title: Thesis
+
+---
+
+<p>The impact of the digital age on the design of architectural spaces seldom speaks of narrative experience. Stories shape our entire lives, and dictate the form architecture takes around us. In fact, architecture can be seen as a physical embodiment of human culture. We’ve largely explored how “digital” enables us to build more freely, more complex and more efficiently, but the experiences in virtual space rarely intersect with that of the physical world. How will architecture truly reflect a social life within the digital age?</p>
+
+<div class="row">
+	<div class="col-md-10 col-md-offset-1 col-xl-10 col-xl-offset-1">
+		<p><img src="../assets/images/projects/thesis/s3.jpg" alt="Thesis" class="img-responsive"/></p>
+	</div>
+</div>
+
+<p>This major research looked at the application of physical/digital co-design into an architectural mindset, placing research on a digital urbanism into context with the design of a prototype museum exhibit –– where digital media and exhibit design are starting to see cross-overs in the same design process. The prototypes use multisensory embodied design, translating a digital experience and extending it into the design of the physical space, to create opportunities for visitors to connect more meaningfully with culture. Overall, this project posits that ‘Form Follows Narrative’ –– whether digital or physical.</p>
+
+<p>In 2016, the project and co-authored papers were presented, through the Synaesthetic Media Lab at Ryerson and Georgia Tech, at TEI'16 (Eindhoven, NL), MWXX (Los Angeles, US), and DIS'16 (Brisbane, AU).</p>
+
+<div class="row">
+	<div class="col-md-10 col-md-offset-1 col-xl-10 col-xl-offset-1">
+		<div class="embed-responsive embed-responsive-16by9">
+			<p align="center"><iframe class="embed-responsive-item" src="https://player.vimeo.com/video/134496066?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<hr>
+	{% for image in page.images %}
+	<div class="col-md-3 col-sm-6 col-xl-3">
+		<a href="{{ image.image_path }}" data-lightbox="thesis">
+		<img src="{{ image.image_path }}" alt="{{ image.title }}" class="sm-img img-responsive"/>
+		</a>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="row">
+	<hr>
+	<p><span class="detail">Process</span></p>
+
+	{% for image in page.process %}
+	<div class="col-md-3 col-sm-6 col-xl-3">
+		<a href="{{ image.image_path }}" data-lightbox="thesis">
+		<img src="{{ image.image_path }}" alt="{{ image.title }}" class="sm-img img-responsive"/>
+		</a>
+	</div>
+	{% endfor %}
+</div>
+
+<hr>
+
+<div class="text-muted">
+	<p><span class="detail">Project Details</span></p>
+	<ul>
+		<li>Master of Digital Media, Major Research Project (2015)</li>
+		<li>Supervisor: Dr. Ali Mazalek, CRC Digital Innovation (Synaesthetic Media Lab)</li>
+		<li>Collaborators: M.McBRIDE, D.HARLEY, J.CHU, O.ZHANG</li>
+		<li>Tools: Arduino, Processing, 3D Printing // Rhino (w. VRay), Photoshop, Illustrator</li>
+		<li><a href="https://vimeo.com/134496066">Prototype Demo Video</a> (Credit: Jamie Kwan)</li>
+	</ul>
+	<p><span class="detail">Publications</span></p>
+	<ul>
+		<li>"Sensing History: Contextualizing Artifacts with Sensory Interactions and Narrative Design" (DIS, 2016) - <a href="http://dl.acm.org/citation.cfm?id=2901829" target="_blank">Co-Authored Paper / Demo</a></li>
+	  	<li>"Sensing context: Reflexive Design Principles for Intersensory Museum Interactions" (Museums and the Web, 2016) - <a href="http://mw2016.museumsandtheweb.com/paper/sensing-context-reflexive-design-principles-for-inter-sensory-museum-interactions/" target="_blank">Co-Authored Paper / Presentation</a></li>
+	  	<li>"Grasping Cultural Context through Multisensory Interactions" (TEI Work-in-Progress, 2016) - <a href="http://synlab.ca/papers/kwan_2016_grasping-cultural-context.pdf">Co-Authored Paper / Demo</a></li>
+	</ul>
+</div>
