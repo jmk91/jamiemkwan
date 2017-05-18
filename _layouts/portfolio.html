@@ -18,6 +18,7 @@
 
         <!-- ===============    Bootstrap core CSS     =============== -->
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="../css/BootstrapXL.css" />
 
         <!-- ===============    font-awesome core CSS     =============== -->
         <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" media="all" />
@@ -99,7 +100,7 @@
         <div class="page-title">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 col-xs-12">
+                    <div class="col-xl-7 col-md-7 col-xs-12">
                         <h1>{{ page.title }}</h1>
                         <img src="../images/branding-border.png" alt="" class="heading-border">
                         <p><b><span class="theme-color">{{ page.slogan }}</span></b>&nbsp;{{ page.oneliner }}</p>
@@ -114,7 +115,7 @@
             <div class="small-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-xl-12 col-md-12">
                             <div class="fixed-bg parallax-image img-responsive" data-background="../assets/projects/{{ page.featureimg }}/1.jpg" data-stellar-background-ratio="0.5"></div>
                         </div>
                     </div>
@@ -127,14 +128,14 @@
     <div class="container">
         
         <div class="row featureimg-mobile" id="mobile-only">
-            <div class="col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-m-12 col-sm-12 col-xs-12">
                 <img src="../assets/projects/{{ page.featureimg }}/1.jpg" class="img-responsive">
             </div>
         </div>
                             
         {% for text in page.challenge %}      
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-xl-8 col-md-8">
                 <span class="detail">Challenge</span>
                 <h2 class="dark-text mb-10 mt-0 bigfont"><b>{{ page.challenge }}</b></h2>
                 <img src="../images/branding-border.png" alt="" class="heading-border">
@@ -145,7 +146,7 @@
 
             {{ content }}
 
-            <div class="col-md-4 col-sm-8">
+            <div class="col-xl-4 col-md-4 col-sm-8">
                 <ul class="project-info list-unstyled">
                   {% for text in page.category %}<li>Category: <span>{{ page.category }}</span></li>{% endfor %}
                   {% for text in page.client %}<li>Client: <span>{{ page.client }}</span></li>{% endfor %}
@@ -165,7 +166,7 @@
                 <div class="work-grids-area hover-one masonry" id="atom-works-grid">
 
                     {% for image in page.images %}
-                    <div class="col-md-4 col-sm-6 col-xs-12 atom-work-item">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-xl-4 atom-work-item">
                         <a href="{{ image.image_path }}" data-lightbox="{{ page.featureimg }}">
                             <img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive"/>
                         </a>
@@ -182,12 +183,12 @@
         <footer class="atom-footer-area small-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xl-6">
                         <div class="copyright">
                             <p>Copyright &copy; 2017 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Jamie Kwan</a></p>
                         </div>
                     </div>
-                    <div class="col-md-6 text-right">
+                    <div class="col-md-6 col-xl-6 text-right">
                         <ul class="list-inline social-icons">
                             <li><a href="http://www.facebook.com/jamiemkwan" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="http://www.twitter.com/jamiemkwan" target="_blank"><i class="fa fa-twitter"></i></a></li>
