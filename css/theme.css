@@ -839,7 +839,7 @@ hr {
   color: #fff;
 }
 @media (max-width: 750px) {
-  .copyright { float: center; }
+  .copyright { text-align: center; }
   .social-icons { text-align: center; }
 }
 
