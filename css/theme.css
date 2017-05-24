@@ -838,7 +838,7 @@ hr {
 .social-icons a:hover {
   color: #fff;
 }
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .copyright { text-align: center; }
   .social-icons { text-align: center; }
 }
