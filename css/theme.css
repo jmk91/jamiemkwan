@@ -913,3 +913,8 @@ img.featureimg-mobile {
 	padding-bottom: 50px;
 }
 
+p.footer-github {
+  font-size: 75%;
+  font-style: italic;
+}
+
