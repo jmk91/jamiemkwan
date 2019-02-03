@@ -37,3 +37,7 @@ Place here your custom CSS styles
 	padding-bottom: 10px;
 	font-size: 20px;
 }
+
+.theme-color span{
+	border-bottom: 4px solid rgb(1,111,185)
+}
