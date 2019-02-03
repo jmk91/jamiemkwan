@@ -62,13 +62,11 @@ title: Jamie Kwan | Experience Design & Strategy
 
 				<div class="row">
 
-					<div class="col-sm-12">
+					<div class="col-sm-8">
 
-						<p><img src="assets/images/section-1.jpg" alt=""></p>
-
-						<p><img src="assets/images/section-2.jpg" alt=""></p>
-
-						<p><img src="assets/images/section-3.jpg" alt=""></p>
+						{% for image in page.images %}
+						<p><img src="{{ image.image_path }}" alt="{{ image.title }}"></p>
+						{% endfor %}
 
 					</div>
 
