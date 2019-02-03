@@ -4,7 +4,7 @@ title: Jamie Kwan | Experience Design & Strategy
 ---
 
 <!-- HOME -->
-	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/section-1.jpg">
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" style="color:{{page.color}}">
 
 		<div class="hs-caption container">
 			<div class="caption-content">
@@ -33,11 +33,11 @@ title: Jamie Kwan | Experience Design & Strategy
 					<div class="col-sm-6">
 
 						<div class="work-details">
-							<h3 class="work-details-title font-alt">Description</h3>
+							<h3 class="work-details-title font-alt">Project Details</h3>
 							<ul>
-								<li class="font-inc"><strong>Client: </strong>SomeCompany</li>
-								<li class="font-inc"><strong>Date: </strong>23 November, 2015</li>
-								<li class="font-inc"><strong>Online: </strong><a href="#" target="_blank">www.example.com</a></li>
+								{% for text in page.client %}<li class="font-inc"><strong>Client: </strong>{{page.client}}</li>{% endfor %}
+
+								{% for text in page.date %}<li class="font-inc"><strong>Date: </strong>{{ page.date }}</li>{% endfor %}
 							</ul>
 						</div>
 
