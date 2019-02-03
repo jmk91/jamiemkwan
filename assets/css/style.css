@@ -130,7 +130,7 @@ Form styles
 ------------------------------------------------------------------- */
 
 .form-control {
-	font-family: "Inconsolata", sans-serif;
+	font-family: "Inconsolata", monospace;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-size: 11px;
@@ -164,7 +164,7 @@ Button styles
 
 .btn {
 	padding: 8px 37px;
-	font-family: "Inconsolata", sans-serif;
+	font-family: "Inconsolata", monospace;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-size: 11px;
@@ -511,7 +511,7 @@ blockquote {
 }
 
 .font-inc {
-	font-family: "Inconsolata", sans-serif;
+	font-family: "Inconsolata", monospace;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -543,7 +543,7 @@ Navbar
 	border-color: #f5f5f5 !important;
 	border-bottom: 1px solid #f5f5f5 !important;
 	border-radius: 0;
-	font-family: "Inconsolata", sans-serif;
+	font-family: "Inconsolata", monospace;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 	font-size: 13px;
