@@ -21,7 +21,7 @@ Place here your custom CSS styles
 
 
 #typed {
-	border-bottom: 7px solid #016FB9;
+	border-bottom: 7px solid rgb(1,111,185);
 }
 
 .work-item {
@@ -29,7 +29,7 @@ Place here your custom CSS styles
 }
 
 .work-title span{
-	background-color: #016FB9;
+	background-color: rgb(1,111,185);
 	color: white;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -38,9 +38,12 @@ Place here your custom CSS styles
 	font-size: 20px;
 }
 
+/*FIX*/
 .theme-color span{ 
-	border-bottom: 4px solid #016FB9;
+	border-bottom: 4px solid rgb(1,111,185);
 }
+/**/
+
 
 .image-caption p{
 	font-size: 10pt;
