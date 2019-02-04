@@ -38,12 +38,9 @@ Place here your custom CSS styles
 	font-size: 20px;
 }
 
-/*FIX*/
 .theme-color span{ 
 	border-bottom: 4px solid rgb(1,111,185);
 }
-/**/
-
 
 .image-caption p{
 	font-size: 10pt;
