@@ -65,24 +65,20 @@ title: Jamie Kwan | Experience Design & Strategy
 
 			<div class="container">
 
+				{% for image in page.images %}
 				<div class="row">
 					
-					{% for image in page.images %}
 					<div class="col-sm-6 col-sm-offset-3">
 
 						<p><img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive"></p>
 					</div>
-
-						{% for text in image.caption-right %}
-							<div class="col-sm-1">
-								<p><strong>Left:</strong><br>{{ image.caption-right }}</p>
-							</div>
-						{% endfor %}
+					{% for text in image.caption-right %}
+						<div class="col-sm-1">
+							<p><strong>Left:</strong><br>{{ image.caption-right }}</p>
+						</div>
 					{% endfor %}
-
-
-				</div><!-- .row -->
-
+				</div>
+				{% endfor %}
 			</div>
 
 		</section>
