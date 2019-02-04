@@ -66,14 +66,20 @@ title: Jamie Kwan | Experience Design & Strategy
 			<div class="container">
 
 				<div class="row">
-
+					
+					{% for image in page.images %}
 					<div class="col-sm-6 col-sm-offset-3">
 
-						{% for image in page.images %}
 						<p><img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive"></p>
-						{% endfor %}
-
 					</div>
+
+						{% for text in image.caption-right %}
+							<div class="col-sm-1 desktop-only">
+								<p><strong>Left:</strong><br>{{ image.caption-right }}</p>
+							</div>
+						{% endfor %}
+					{% endfor %}
+
 
 				</div><!-- .row -->
 
@@ -89,9 +95,9 @@ title: Jamie Kwan | Experience Design & Strategy
 			
 				<div class="pagination font-inc text-uppercase">
 			
-					<a href="#"><i class="fa fa-angle-left"></i> Prev</a>
-					<a href="#">All works</a>
-					<a href="#">Next <i class="fa fa-angle-right"></i></a>
+					<a href="/{% page.prev %}"><i class="fa fa-angle-left"></i> Prev</a>
+					<a href="http://jamiemkwan.com">Home</a>
+					<a href="/{% page.prev %}">Next <i class="fa fa-angle-right"></i></a>
 			
 				</div>
 			
