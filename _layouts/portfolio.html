@@ -61,16 +61,16 @@ title: Jamie Kwan | Experience Design & Strategy
 		<!-- /PORTFOLIO DESCRIPTION -->
 
 		<!-- PORTFOLIO CONTENT -->
-		<section class="module p-t-0 p-b-0">
+		<section>
 
 			<div class="container">
 
 				<div class="row">
 
-					<div class="col-sm-12">
+					<div class="col-sm-6 offset-col-3">
 
 						{% for image in page.images %}
-						<p><img src="{{ image.image_path }}" alt="{{ image.title }}"></p>
+						<p><img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive"></p>
 						{% endfor %}
 
 					</div>
