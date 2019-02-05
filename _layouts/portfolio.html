@@ -14,10 +14,10 @@ title: Jamie Kwan | Experience Design & Strategy
 
 		<div class="hs-caption container">
 			<div class="caption-content">
-				<div class="hs-title-size-1 font-alt m-b-20" style="text-transform:uppercase">
+				<div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
 					{{ page.title }}
 				</div>
-				<div class="hs-title-size-3 font-alt">
+				<div class="hs-title-size-3 font-alt wow fadeInUp" data-wow-delay="0.4s">
 					{{ page.oneliner }}
 					<br>
 					<i class="fa fa-angle-down"></i>
@@ -38,9 +38,9 @@ title: Jamie Kwan | Experience Design & Strategy
 
 				<div class="row">
 
-					<div class="col-sm-6">
+					<div class="col-sm-3 col-m-3 col-xl-3">
 
-						<div class="work-details">
+						<div class="work-details wow fadeInUp">
 							<h3 class="work-details-title font-alt">Project Details</h3>
 							<ul>
 								{% for text in page.client %}<li class="font-inc"><strong>Client: </strong>{{page.client}}</li>{% endfor %}
@@ -51,7 +51,7 @@ title: Jamie Kwan | Experience Design & Strategy
 
 					</div>
 
-					<div class="col-sm-6">
+					<div class="col-sm-6 col-sm-offset-3 col-m-6 col-m-offset-3 col-xl-6 col-xl-offset-3 wow fadeInUp">
 						{{ content }}
 					</div>
 
@@ -70,9 +70,9 @@ title: Jamie Kwan | Experience Design & Strategy
 				{% for image in page.images %}
 				<div class="row">
 					
-					<div class="col-sm-6 col-sm-offset-3">
+					<div class="col-sm-6 col-sm-offset-3  wow fadeInUp">
 
-						<p><img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive wow fadeInUp"></p>
+						<p><img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive"></p>
 					</div>
 <!-- 					{% for text in image.caption-right %}
 						<div class="col-sm-2 align-items-end">
