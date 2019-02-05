@@ -67,6 +67,16 @@ title: Jamie Kwan | Experience Design & Strategy
 
 			<div class="container">
 
+				{% for text in page.video %}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3  wow fadeInUp">
+						<div class="embed-responsive embed-responsive-16by9">
+							<p align="center"><iframe src="{{ video.video_path }}" width="{{ video.videoWidth }}" height="{{ video.videoHeight }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
 				{% for image in page.images %}
 				<div class="row">
 					
