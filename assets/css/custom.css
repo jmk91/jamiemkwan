@@ -48,10 +48,10 @@ Place here your custom CSS styles
 
 .imageCaption {
 	font-style: italic;
-	font-size: 12px/0.5em;
+	font-size: 12px;
 }
 
 .imageCaptionLine {
-	border-top: 7px solid rgb(1,111,185);
+	border-right: 4px solid rgb(1,111,185);
 
 }
