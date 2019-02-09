@@ -66,7 +66,7 @@ title: Jamie Kwan | Experience Design & Strategy
 
 			<div class="container">
 
-				{% for text in page.video %}
+				<!-- {% for text in page.video %}
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3  wow fadeInUp">
 						<div class="embed-responsive embed-responsive-16by9">
@@ -74,10 +74,9 @@ title: Jamie Kwan | Experience Design & Strategy
 						</div>
 					</div>
 				</div>
-				{% endfor %}
+				{% endfor %} -->
 
 				{% for image in page.images %}
-
 				<div class="row">
 					
 					<div class="col-sm-6 col-sm-offset-3 img-fluid wow fadeIn" data-wow-delay="0.2s">
@@ -85,38 +84,17 @@ title: Jamie Kwan | Experience Design & Strategy
 							<img src="{{ image.image_path }}" alt="{{ image.title }}">
 						</p>
 					</div>
-				</div>
 
-				{% for text in image.caption-right %}
+<!-- 				{% for text in image.caption-right %}
 
-				<div class="col-sm-2 align-items-end">
-					<p class="image-caption"><strong>Left:</strong><br>{{ image.caption-right }}</p>
-				</div>
-
-				{% endfor %}
-				{% endfor %}
-
-
-					{% for text in image.subtitle %}
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 wow fadeIn" data-wow-delay="0.2s" >
-							<h3 class="work-details-title font-alt">{{ image.subtitle }}</h3>
-							<p>{{image.story}}</p>
-						</div>
+					<div class="col-sm-2 align-items-end">
+						<p class="image-caption"><strong>Left:</strong><br>{{ image.caption-right }}</p>
 					</div>
-					{% endfor %}
 
-					{% for text in image.quote %}
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 wow fadeIn" data-wow-delay="0.2s">
-							<blockquote class="blockquote">{{ image.quote }}</blockquote>
-							<footer class="blockquote-footer">{{ image.quote-cite }}</footer>
-						</div>
-					</div>
-					{% endfor %}
+					{% endfor %} -->
 
-				
-
+				</div>
+				{% endfor %}
 
 			</div>
 
