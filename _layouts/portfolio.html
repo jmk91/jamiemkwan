@@ -91,6 +91,16 @@ title: Jamie Kwan | Experience Design & Strategy
 					<br>
 					{% endfor %}
 
+					{% for text in image.quote %}
+
+						<div class="col-sm-8 col-sm-offset-2 wow fadeIn">
+							<blockquote class="blockquote">
+								<p>"{{ image.quote }}"</p>
+								<footer class="blockquote-footer">{{ image.source }}</footer>
+							</blockquote>
+						</div>
+					{% endfor %}
+
 					<div class="row">
 
 						<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 img-fluid wow fadeIn" data-wow-delay="0.2s">
