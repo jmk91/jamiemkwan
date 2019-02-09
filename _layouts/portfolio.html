@@ -70,7 +70,7 @@ title: Jamie Kwan | Experience Design & Strategy
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3  wow fadeInUp">
 						<div class="embed-responsive embed-responsive-16by9">
-							<p align="center"><iframe src="{{ video.video_path }}" width="{{ video.videoWidth }}" height="{{ video.videoHeight }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+							<p align="center"><iframe src="{{ video.videoPath }}" width="{{ video.videoWidth }}" height="{{ video.videoHeight }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 						</div>
 					</div>
 				</div>
@@ -97,6 +97,7 @@ title: Jamie Kwan | Experience Design & Strategy
 				{% for text in image.body-text %}
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
+							<h2>{{ image.body-heading }}</h2>
 							<p>{{ image.body-text }}</p>
 						</div>
 					</div>
