@@ -47,7 +47,11 @@ Place here your custom CSS styles
 }
 
 .image-caption p{
-	font-size: 10pt;
-	font-style: italic;
 	color: 50%;
+	font-size: 20%;
+}
+
+.image-caption div{
+	border-top: 7px solid rgb(1,111,185);
+
 }
