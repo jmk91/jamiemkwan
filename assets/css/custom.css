@@ -58,6 +58,7 @@ Place here your custom CSS styles
 
 .blockquote {
 	border-left: 4px solid rgb(1,111,185);
+	padding-left: 20px;
 }
 
 .blockquote p{
