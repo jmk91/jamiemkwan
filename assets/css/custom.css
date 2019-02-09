@@ -48,7 +48,7 @@ Place here your custom CSS styles
 
 .imageCaption {
 	font-style: italic;
-	font-size: 12px/normal;
+	font-size: 12px/1.0em;
 }
 
 .imageCaptionLine {
