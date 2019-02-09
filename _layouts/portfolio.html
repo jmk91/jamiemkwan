@@ -83,6 +83,9 @@ title: Jamie Kwan | Experience Design & Strategy
 						<p>
 							<img src="{{ image.image_path }}" alt="{{ image.title }}">
 						</p>
+						{% for text in image.body-text %}
+							<p>{{ image.body-text }}</p>
+						{% endfor %}
 					</div>
 
 					{% for text in image.caption-right %}
@@ -92,6 +95,7 @@ title: Jamie Kwan | Experience Design & Strategy
 						</div>
 
 					{% endfor %}
+
 
 				</div>
 				{% endfor %}
