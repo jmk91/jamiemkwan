@@ -19,10 +19,6 @@ Place here your custom CSS styles
   #mobile-only { display:block; }
 }
 
-@media (min-width: 1200px) .hs-title-size-1 .hs-title-size-2 .hs-title-size-3 .hs-title-size-4{
-  font-size: 300%;
-}
-
 
 #typed {
 	border-bottom: 7px solid rgb(1,111,185);
