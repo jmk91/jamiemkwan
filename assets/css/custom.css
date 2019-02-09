@@ -46,12 +46,12 @@ Place here your custom CSS styles
 	border-bottom: 4px solid rgb(1,111,185);
 }
 
-.image-caption p{
-	color: 50%;
-	font-size: 20%;
+.imageCaption p{
+	color: 10%;
+	font-size: 10%;
 }
 
-.image-caption div{
+.imageCaption div{
 	border-top: 7px solid rgb(1,111,185);
 
 }
