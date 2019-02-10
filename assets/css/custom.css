@@ -3,6 +3,9 @@ Project: Semantic
 Place here your custom CSS styles
 ------------------------------------------------------------------ */
 
+html {
+  scroll-behavior: smooth;
+}
 
 ::selection {
   background: black; 
